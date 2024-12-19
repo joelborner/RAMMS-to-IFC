@@ -115,6 +115,9 @@ class FileSelector:
 
 root = tk.Tk()
 style = ttk.Style(root)
+root.geometry("600x600")
+root.minsize(600, 600)
+root.maxsize(600, 600)
 style.theme_use("winnative")
 my_gui = FileSelector(root)
 root.mainloop()
